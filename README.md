@@ -35,10 +35,10 @@ Make sure your Developer Tools are open at all times while working on this proje
 Before you click the "Complete Assessment" button on the Learning Platform, add your answers below each question and make a commit.
 
 1. When a child is clicked on in the browser, which module contains the code that will execute on that event happening? Can you explain the algorithm of that logic?
-   > Your answer here
+   > The **kids.js** module contains the code that will execute. The **addEventListener** method waits on an event - in this case, a click of the mouse button.  When the user clicks the mouse button, the function begins execution. If the object that was clicked possesses the data attribute of "child", then the alert method on the window object activates and displays the prescribed message. If the object is not "child," nothing further happens within this code block.
 2. In the **Pairings** module, why must the `findCelebrityMatch()` function be invoked inside the `for..of` loop that iterates the kids array?
-   > Your answer here
+   > Each iteration of the kids array calls `findCelebrityMatch()` and checks for pairing of each child with their specific celebrity match.
 3. In the **CelebrityList** module, can you describe how the name of the sport that the celebrity plays can be displayed in the window alert text?
-   > Your answer here
+   > The name of the sport is assigned a data attribute of "sport." This is invoked in the event listener if the object with data type "celebrity" is clicked.
 4. Can you describe, in detail, the algorithm that is in the `main` module?
-   > Your answer here
+   > Following the import of functions from other modules, the HTML element with the ID "container" is selected and assigned to the `mainContainer` variable. Next follows a template literal called `applicationHTML` that defines headings and calls the imported functions.  Finally, `applicationHTML` is inserted into the `innerHTML` method of the of the `mainContainer` element.
